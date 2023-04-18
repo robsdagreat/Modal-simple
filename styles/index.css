@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+}
+
+#modal{
+    display: none;
+    width: 80%;
+    margin:auto; 
+    height: 300px;
+    border: 1px solid black;
+    align-items: center;
+    background: white; 
+    -webkit-animation-name: robs;
+    -webkit-animation-duration: 5s;
+    animation-name: robs;
+    animation-duration: 5s;
+
+}
+@keyframes robs{
+from {top: 10px} 
+to {bottom: 40px}
+} 
+
+body{
+    margin: 30px;
+    background: black;
+}
+
+#modal p{
+    font-size: 30px;
+    margin-left: 300px;
+}
+
+.remove{
+    float: right;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+   position: relative;
+   top: -80px;
+}
+
+footer{
+    background-color: green;
+    position: relative;
+    top: 166px;
+    font-size: 20px;
+}
+h2{
+    margin-left: 0px;
+    margin-bottom: 50px;
+    background-color: green;
+}
+
