@@ -12,11 +12,6 @@
     border: 1px solid black;
     align-items: center;
     background: white; 
-    -webkit-animation-name: robs;
-    -webkit-animation-duration: 5s;
-    animation-name: robs;
-    animation-duration: 5s;
-
 }
 @keyframes robs{
 from {top: 10px} 
@@ -35,11 +30,15 @@ body{
 
 .remove{
     float: right;
-    font-size: 30px;
+    font-size: 100px;
     font-weight: bolder;
     cursor: pointer;
    position: relative;
    top: -80px;
+}
+
+.remove:hover{
+    color: red;
 }
 
 footer{
@@ -54,3 +53,49 @@ h2{
     background-color: green;
 }
 
+
+
+#modal2{
+    display: none;
+    width: 80%;
+    margin:auto; 
+    height: 300px;
+    border: 1px solid black;
+    align-items: center;
+    background: white; 
+    -webkit-animation-name: robs;
+    -webkit-animation-duration: 5s;
+    animation-name: robs;
+    animation-duration: 10s;
+    z-index: 1;
+
+}
+
+@-webkit-keyframes robs {
+    from{ bottom: -200px; opacity:0}
+    to{ top: 10px; opacity: 1}
+}
+
+@keyframes robs{
+    from{ bottom: -200px; opacity:0}
+    to{ top: 10px; opacity: 1} 
+}
+
+#modal2 p{
+    font-size: 30px;
+    margin-left: 300px;
+    margin-top: 150px;
+}
+
+.remove2{
+    float: right;
+    font-size: 100px;
+    font-weight: bolder;
+    cursor: pointer;
+   position: relative;
+   top: -150px;
+}
+
+.remove2:hover{
+    color: red
+}

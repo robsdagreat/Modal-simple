@@ -26,7 +26,25 @@
         <p>Hello this is my modal</p>
     </div>
     <footer>The end</footer>
+    </div> <br> <br>
+
+    <h2>Do you want to see some magic? Click on the button bellow</h2><br>
+    <button onclick="magic1()">Click me</button>
+    
+    <div id="modal2">
+
+         
+
+
+    <div id="content2">
+        <span class="remove2">&times;</span>
+        <p>This is the magic i was trying to show you,
+            thank you for your time and attention!!
+        </p>
+
     </div>
+    </div> 
+
 
 <script>
     
@@ -38,8 +56,35 @@
 
    span.addEventListener("click",() =>{
     content.style.display="none";
-   })   
+   }) 
+   
+   const magic= document.getElementById("magic");
+   const content2= document.getElementById("modal2");
+   const remove2= document.getElementsByClassName("remove2")[0];
+
+    function magic1(){
+    // window.confirm("Are sure you want to do this");
+
+    content.style.display="none";
+
+    if(content.style.display="none"){
+        content2.style.display="block";
+    }
+   }
+
+
+
+   remove2.onclick= function(){
+    content2.style.display="none";
+   }
+   
     
+
+    // window.addEventListener("click", (event) =>{
+    //     if(event.target== span){
+    //         content.style.display="none";
+    //     }
+    // }
 </script>
 </body>
 </html>
